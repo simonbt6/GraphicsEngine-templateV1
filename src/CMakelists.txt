@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(src)
+
+add_subdirectory(graphics)
+add_subdirectory(maths)
+add_subdirectory(utils)
+
+add_library(src INTERFACE)
+
+target_link_libraries(src INTERFACE graphics_engine)
+target_link_libraries(src INTERFACE maths_lib)
+target_link_libraries(src INTERFACE utils)
+
+target_include_directories(src INTERFACE / ../includes/ ../libs/)

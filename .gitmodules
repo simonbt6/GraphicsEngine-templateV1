@@ -1,0 +1,12 @@
+[submodule "src/graphics"]
+	path = src/graphics
+	url = https://github.com/simonbt6/GraphicsEngine
+[submodule "src/maths"]
+	path = src/maths
+	url = https://github.com/simonbt6/maths-lib
+[submodule "libs/glfw"]
+	path = libs/glfw
+	url = https://github.com/glfw/glfw
+[submodule "includes/stb"]
+	path = includes/stb
+	url = https://github.com/nothings/stb

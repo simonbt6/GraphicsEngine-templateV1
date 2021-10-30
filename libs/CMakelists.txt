@@ -1,0 +1,10 @@
+cmake_minimum_required(VERSION 3.20)
+
+project(libs)
+
+add_subdirectory(glfw)
+add_subdirectory(glad)
+
+add_library(libs INTERFACE)
+
+target_link_libraries(libs INTERFACE glfw glad ../libs/irrKlang/irrKlang ../libs/FreeType/freetype) 
